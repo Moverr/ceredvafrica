@@ -5539,13 +5539,13 @@ $jscomp.polyfill = function (e, r, p, m) {
       key: "_createOverlay",
       value: function _createOverlay() {
         var overlay = document.createElement('div');
-        this._closeBound = this.close.bind(this);
-        overlay.classList.add('sidenav-overlay');
+        // this._closeBound = this.close.bind(this);
+        // // overlay.classList.add('sidenav-overlay');
 
-        overlay.addEventListener('click', this._closeBound);
+        // overlay.addEventListener('click', this._closeBound);
 
-        document.body.appendChild(overlay);
-        this._overlay = overlay;
+        // document.body.appendChild(overlay);
+        // this._overlay = overlay;
       }
     }, {
       key: "_setupEventHandlers",
@@ -5978,7 +5978,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           start = this.percentOpen;
         } else {
           $(this._overlay).css({
-            display: 'block'
+            display: 'none'
           });
         }
 
