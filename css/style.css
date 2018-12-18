@@ -9,7 +9,13 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+  
 }
+
+  nav   .active{
+    background: #eee !important;
+    }  
+
 
 p {
   line-height: 2rem;
