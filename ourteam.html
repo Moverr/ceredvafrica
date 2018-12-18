@@ -13,6 +13,58 @@
       <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
  
+ <link type="text/css" rel="stylesheet" href="release/featherlight.min.css" />
+    <style type="text/css">
+      @media all {
+        .lightbox { display: none; }
+        .fl-page h1,
+        .fl-page h3,
+        .fl-page h4 {
+          font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+          font-weight: 100;
+          letter-spacing: 1px;
+        }
+        .fl-page h1 { font-size: 110px; margin-bottom: 0.5em; }
+        .fl-page h1 i { font-style: normal; color: #ddd; }
+        .fl-page h1 span { font-size: 30px; color: #333;}
+        .fl-page h3 { text-align: right; }
+        .fl-page h3 { font-size: 15px; }
+        .fl-page h4 { font-size: 2em; }
+        .fl-page .jumbotron { margin-top: 2em; }
+        .fl-page .doc { margin: 2em 0;}
+        .fl-page .btn-download { float: right; }
+        .fl-page .btn-default { vertical-align: bottom; }
+
+        .fl-page .btn-lg span { font-size: 0.7em; }
+        .fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em;}
+        .fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
+        .fl-page .github { margin: 2em 0; }
+        .fl-page .github a { vertical-align: top; }
+        .fl-page .marketing a { color: #999; }
+
+        /* override default feather style... */
+        .fixwidth {
+          background: rgba(256,256,256, 0.8);
+        }
+        .fixwidth .featherlight-content {
+          width: 500px;
+          padding: 25px;
+          color: #fff;
+          background: #111;
+        }
+        .fixwidth .featherlight-close {
+          color: #fff;
+          background: #333;
+        }
+
+      }
+      @media(max-width: 768px){
+        .fl-page h1 span { display: block; }
+        .fl-page .btn-download { float: none; margin-bottom: 1em; }
+      }
+    </style>
+
+
       
       <style type="text/css">
   .img-box{
@@ -22,6 +74,7 @@
   background: #ddd;
 }
   .img-box:hover{
+    cursor: pointer;
    
   }
   .img-box img{
@@ -85,77 +138,93 @@
         <div class="section">
 
           <div class="row">
-             
                 <div class="img-box">
+
+               <a href="#" data-featherlight="#jtmessage" style="text-decoration: none;  color:#000;"> 
                   <span><img src="./imgs/jtshort.jpg" /></span>
                   <span>
                     Joseph Tumushabe<BR/>
                     <strong>CEO</strong>
                   </span>
+</a>
                 </div>
 
 
                 <div class="img-box">
+                   <a href="#" data-featherlight="#belindamessage" style="text-decoration: none;  color:#000;"> 
                   <span><img src="./imgs/belindashort.jpg" /></span>
                   <span>
                     Lydia Belinda Sandi <BR/>
                     <strong>Director</strong>
                   </span>
+                </a>
                 </div>
 
                  <div class="img-box">
+                  <a href="#" data-featherlight="#caritasmessage" style="text-decoration: none;  color:#000;"> 
                   <span><img src="./imgs/caritasshort.jpg" /></span>
                   <span>
                    Caritas Pesha  <BR/>
                     <strong>Team Leader </strong>
                   </span>
+                </a>
                 </div>
 
                  <div class="img-box">
+                   <a href="#" data-featherlight="#glendasmessage" style="text-decoration: none;  color:#000;"> 
                   <span><img src="./imgs/glendashort.jpg" /></span>
                   <span>
                   Glenda T. Muzenda   <BR/>
                     <strong>Social Justice Professional </strong>
                   </span>
+                </a>
                 </div>
 
 
                  <div class="img-box">
+                   <a href="#" data-featherlight="#juliasmessage" style="text-decoration: none;  color:#000;"> 
                   <span><img src="./imgs/juliashort.jpg" /></span>
                   <span>
                   Julia T. Nzimande  <BR/>
                     <strong>SA - Director </strong>
                   </span>
+                </a>
                 </div>
 
 
 
             <div class="img-box">
+               <a href="#" data-featherlight="#jonamessage" style="text-decoration: none;  color:#000;"> 
                   <span><img src="./imgs/jonashort.jpg" /></span>
                   <span>
                   Johannes G. Mulokozi  <BR/>
                     <strong>Monitoring and Evaluation  </strong>
                   </span>
+                </a>
                 </div>
 
 
 
 
               <div class="img-box">
+                 <a href="#" data-featherlight="#juliethmessage" style="text-decoration: none;  color:#000;"> 
                   <span><img src="./imgs/juliethshort.jpg" /></span>
                   <span>
                   Julieth F. Mongi  <BR/>
                     <strong>Public Relations </strong>
                   </span>
+                </a>
                 </div>
 
 
                 <div class="img-box">
-                  <span><img src="./imgs/benardshort.jpg" /></span>
+                   <a href="#" data-featherlight="#benardmessage" style="text-decoration: none;  color:#000;"> 
+                    <span><img src="./imgs/benardshort.jpg" />  </span>
                   <span>
                  Bernard Kakuhikire <BR/>
                     <strong> Coordinator Uganda </strong>
                   </span>
+                </a>
                 </div>
 
 
@@ -163,15 +232,19 @@
 
 
                 <div class="img-box">
+                   <a href="#" data-featherlight="#stephenmessage" style="text-decoration: none;  color:#000;"> 
                   <span><img src="./imgs/stephenshort.jpg" /></span>
                   <span>
                 Stephen Mugarura <BR/>
                     <strong> Head Statistician  </strong>
                   </span>
+                </a>
                 </div>
 
 
  
+
+
 
 
 
@@ -259,7 +332,7 @@
               </div>
               <div class="col l3 s12">
                 <h5 class="white-text">Social Media</h5>
-                 <a href="https://www.facebook.com/ceredev/" target="_blank" style="color: #fff;"><i class="fa fa-facebook" style="font-size: 55px;"></i></a> &nbsp;  <i class="fa fa-youtube" style="font-size: 55px;" ></i> &nbsp;  <i style="font-size: 55px;"  class="fa fa-twitter"></i>
+                 <a href="https://www.facebook.com/Ceredevafrica-2066265203685130" target="_blank" style="color: #fff;"><i class="fa fa-facebook" style="font-size: 55px;"></i></a> &nbsp;  <i class="fa fa-youtube" style="font-size: 55px;" ></i> &nbsp;  <i style="font-size: 55px;"  class="fa fa-twitter"></i>
               </div>
             </div>
           </div>
@@ -269,8 +342,145 @@
             </div>
           </div>
         </footer>
-      <!--  Scripts-->
+
+      
+
+
+  <div class="lightbox" id="jtmessage">
+      <h2>Joseph Tumushabe</h2>
+      <p>
+        Joseph Tumushabe – CEO, Oversees CEREDEV Programs and operations. Demographer, former Lecturer Makerere University, Uganda. An accomplished mentor, with over-25 years of research, evaluation and development consultancy experience spanning across 20 African countries. Major interests in business Development and resource mobilization; public health program strengthening; motivation, careers and mentorship of adolescents and youth; and helping people to realize their goals. Working with government, private sector, civil society organizations and experts to provide best solutions in conducing governance terrain at all levels.
+
+      </p>
+    </div>
+
+
+
+
+  <div class="lightbox" id="belindamessage">
+      <h2>Lydia Belinda Sandi </h2>
+      <p>
+          Lydia Belinda Sandi – Director, young, self-driven, ambitious, and hardworking entrepreneur, with a Degree in Marketing and a Professional Certificate in Marketing (CIM). Lydia Heads the CEREDEV Lake Zonal Centre and is Director CEREDEV Horizon Promary and Nursery School. 
+
+          Lydia has eight-year experience in working with starter campaigns and nurturing them to enviable heights; marketing and network specialist. She won the Tony Elumelu Award 2018 for CEREDEV career development training wing.
+
+      </p>
+    </div>
+
+
+  <div class="lightbox" id="caritasmessage">
+      <h2>Caritas Pesha  </h2>
+      <p>
+         Caritas Pesha – Team Leader Research and Consultancy Services. Caritas has over 10+ years of research experience in qualitative and quantitative research across different projects. 
+         Few people know community people with varied cultures more than Caritas does. Caritas has carried out field team leadership in all regions of Tanzania, over 80% of the districts and enriched our knowledge of the country’s multiple cultures and communities. Caritas designs project proposals, prepares research instruments, trains and supervises field teams, and carries out data analysis and report writing. She is a qualitative data collection and management specialist with unmatched skills and a technical Swahili – English bi-directional and translator and transcriber.         
+
+      </p>
+    </div>
+
+
+     <div class="lightbox" id="glendasmessage">
+      <h2>Glenda Tambudzai Muzenda  </h2>
+      <p>
+        Glenda Tambudzai Muzenda is a social justice professional with over a decade of domestic and international experience in ASRHR, human rights, gender equality, gender analysis, and women’s rights. Her focus is on sexuality and gender rights of women, girls and young women the region.
+        A multi-programme talented professional, she has presented at various conferences and seminars, and has published opinion and commentary pieces in publications across Southern Africa.  
+       
+
+      </p>
+    </div>
+
+
+    <div class="lightbox" id="juliasmessage">
+      <h2>Julia Teboho Nzimande </h2>
+      <p>
+        CEREDEV South Africa Director Capacity Building and Governance Coordinator is a Black Economic Empowerment Advisor; and a share-holder in Mobile Accommodations Solutions a company designing, manufacturing innovative modular buildings, i.e. classrooms, clinics and houses.She is Board Member and Director on the Association of B-BBEE Professionals (ABP) in SA since September 2016 and Technical committee member at South African Institute of Professional Accountants (SAIPA). Julia worked for almost a decade at the Department of Trade and Industry,
+        initially as Deputy Director at the Industrial Development Division, Creative Industries desk and later Deputy Director BEE Partnerships and Stakeholder Engagement at the B-BBEE Chief Directorate. Julia was part of the B-BBEE legislation, policies and strategies development team. Her passion is the develop-ment and implementation of policies and strategies for the transformation and growth of national economies; creating PPP synergies, supporting compliance; providing support to CSOs that target economic empowerment and skills building of marginalised groups towards economic and social participation.
+
+       
+
+      </p>
+    </div>
+
+
+
+    <div class="lightbox" id="jonamessage">
+      <h2>Johannes George Mulokozi  </h2>
+      <p>
+       Johannes George Mulokozi is a Monitoring and Evaluation expert. Johannes was nurtured and mentored by CEREDEV. Joining CEREDEV at the same time as he was joining college at Dodoma University, Johannes is one expert that has developed and grown with CEREDEV. In 2017 he won an Award and was seconded to Jambo Bukoba a Tanzania Non-governmental organisation based in Kagera Region, Tanzania. Here he uses the power of sports to empower the youth and children, with the vision to create a conducive and sustainable environment for children and youth to attain their dreams.
+       
+
+      </p>
+    </div>
+
+
+
+
+    <div class="lightbox" id="juliethmessage">
+      <h2> Julieth F. Mongi </h2>
+      <p>
+      Julieth F. Mongi is a highly motivated, personable Public Relations staff for Non-Profit Organization with two years’ experience in communications industry.
+      Always striving to be an efficient communicator with exceptional time management, problem-solving, and analytical skills, CEREDEV has sharpened my research skills as I traversed most parts of Tanzania administering research tools in countrywide and regional studies. In CEREDEV I have become an expert in surveys and participatory methodologies, in literature reviews and data analysis. Targeting a career with civil society since high school, as a Public Relations expert, CEREDEV was my match, mentoring me. Here children, adolescents, youth, adults in rural and urban communities, government servants and officials, private sector operators, international and local organization/ UN Systems agency staff present challenges whose efficiency in management is one’s source of livelihood.  
+      
+
+      </p>
+    </div>
+
+
+
+
+    <div class="lightbox" id="benardmessage">
+      <h2> Bernard Kakuhikire  </h2>
+      <p>
+     Bernard Kakuhikire, Head Entrepreneurship Development Training and Coordinator, CEREDEV, Uganda is also a Senior Lecturer and former Dean of Management Sciences; Mbarara University of Science and Technology (MUST), Uganda.
+
+     He is the Lead and Senior Researcher for the Health Outcomes, Progressive Entrepreneurship, and Networks (HopeNet) Project of MUST/Harvard-MGH Collaboration. 
+
+    His key interests include Consultancies in Baseline/Needs Evaluations and Assessments, Process and End-of project/programme reviews and impact evaluations. He has a decade of training and mentorship in Integration of social development into micro-finance project planning; Rural livelihoods, poverty and vulnerability analysis; Policy impact reviews and Local Government/ Decentralization and NGO/CBO interventions.
+
+
+
+      </p>
+    </div>
+
+
+
+
+    <div class="lightbox" id="stephenmessage">
+      <h2> Stephen Mugarura </h2>
+      <p>
+     Stephen Mugarura, CEREDEV Head Statistician is qualified Masters of Statistics holder. The Data Management Specialist has over 15 years’ experience and survey design, monitoring, evaluation and analysis. 
+     Stephen’s field evaluation countries include Uganda, Kenya, Tanzania, Rwanda, Burundi, South Sudan, Sudan, Ethiopia, Ghana and Zambia.
+      Interests: Agricultural and trade research, public health, education, gender studies and resettlement. He has successfully managed large cross-sectional and time-series databases. From 2010 - 2012, he handled data for the biggest Millennium Challenge Corporation (MCC) resettlement project in the world under Africare Tanzania. In 2016 to 2017, Stephen developed the EAC Integration Policy.
+      Stephen is also an accomplished entrepreneur in education and the clothing industry with a story or two to tell. 
+
+
+
+
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <script src="js/jquery-2.1.1.min.js"></script>
+
+      <script src="release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>    
+
       <script src="js/materialize.js"></script>
       <script src="js/init.js"></script>
 
