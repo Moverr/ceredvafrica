@@ -68,13 +68,22 @@ footer.page-footer {
 }
 
 .mo{
-  padding-left: 30px !important; 
+  padding-left: 30px !important;  float: left;
 }
 
 
 .mo li{
   list-style-type: square !important;
+  width: 900px;
+}
+.mo a{
+  padding: 5px;
+  display: block;
+}
+.mo a:hover{
+  background: #ddd; 
 }
 .mo .active{
   background: #f1f2f1 !important;
+  padding: 5px;
 }
