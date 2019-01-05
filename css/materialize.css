@@ -9097,3 +9097,6 @@ input[type=range]::-ms-thumb {
 }
 
  
+b{
+  font-weight: bold;
+}

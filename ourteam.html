@@ -84,36 +84,48 @@
 </style>
 
 
+
+
+
+
     </head>
     <body>
       <div class="navbar-fixed">
-      <nav class="white " role="navigation" style="background: #f1f1f1 !important;">
-        <div class="nav-wrapper container">
-          <a id="logo-container" href="./" class="brand-logo"> <img src="./imgs/logo.png"> </a>
-          <ul class="left hide-on-med-and-down" style="margin-left: 100px; width:100%;">
-           
+     <nav class="white " role="navigation" style="background: #f1f1f1 !important;">
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="./" class="brand-logo"> <img src="./imgs/logo.png"> </a>
+             <ul class="left hide-on-med-and-down" style="margin-left: 100px; width:100%;">
+              <li><a href="./"  >Home</a></li>
+               <li><a href="./aboutus.html"  >About Us</a></li>
+               <li><a href="./ourwork.html">Our Work</a></li>
+                 <li><a href="./partners.html"   >Our Partners</a></li>
+               
+               
+                <li><a href="./ourteam.html"   class="active"  >Our Team</a></li>
+                <!-- <li><a href="./services.html">Services</a></li>
+                 <li><a href="./events.html">Events</a></li>
+                  <li><a href="./contactus.html">Contact Us</a></li> -->
+                  <li style="float: right;"><a href="http://ceredevafrica.org/webmail" target="_blank"><i class="fa fa-envelope"> </i> Webmail</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav" >
+              
+
                <li><a href="./">Home</a></li>
                <li><a href="./aboutus.html" >About Us</a></li>
-               <li><a href="./ourteam.html" class="active"  >Our Team</a></li><!-- <li><a href="./services.html">Services</a></li>
-               <li><a href="./events.html">Events</a></li>
-                <li><a href="./contactus.html">Contact Us</a></li -->
-                <li style="float: right;"><a href="http://ceredevafrica.org/webmail" target="_blank"><i class="fa fa-envelope"> </i> Webmail</a></li>
-          </ul>
+               <li><a href="./ourwork.html" >Our Work</a></li>
+               
+               <li><a href="./ourteam.html" class="active" >Our Team</a></li>
+                
+                <!-- <li><a href="./services.html">Services</a></li>
+                 <li><a href="./events.html">Events</a></li>
+                  <li><a href="./contactus.html">Contact Us</a></li> -->
+                  <li  ><a href="http://ceredevafrica.org/webmail" target="_blank">Webmail</a></li>
 
-          <ul id="nav-mobile" class="sidenav">
-            
-            
-               <li><a href="./">Home</a></li>
-               <li><a href="./aboutus.html" class="active">About Us</a></li>
-               <li><a href="./ourteam.html" >Our Team</a></li>  <!-- <li><a href="./services.html">Services</a></li>
-               <li><a href="./events.html">Events</a></li>
-                <li><a href="./contactus.html">Contact Us</a></li> -->
-                <li  ><a href="http://ceredevafrica.org/webmail" target="_blank">Webmail</a></li>
-
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
     </div>
 
 
@@ -134,26 +146,63 @@
 
 
 
+<style type="text/css">
+.graph{
+   position:absolute;
+}
+.hide{
+  display: none;
+}
+ /* .img-box  {
+    background-color: #000; z-index: 999999999;   
+  }
+  .img-box img {
+    background-color: #000; z-index: 0;   
+  }*/
+</style>
+
+<script type="text/javascript">
+  function showGrapth(id){ 
+
+   hideGraph();
+   $(id).fadeIn('slow');
+    $(id).removeClass('hide');
+  }
+
+  function hideGraph(){
+     $('.graph').addClass('hide');
+  }
+
+</script>
+
+
       <div class="container" style="margin-top:0px; min-height: 600px;">
         <div class="section">
 
           <div class="row">
                 <div class="img-box">
-
-               <a href="#" data-featherlight="#jtmessage" style="text-decoration: none;  color:#000;"> 
-                  <span><img src="./imgs/jtshort.jpg" /></span>
+            
+               <a href="#" data-featherlight="#jtmessage"  style="text-decoration: none;  color:#000;"> 
                   <span>
+                    <img src="./imgs/maginfyingglass.png"  class="graph hide" id="jtgraph"/> 
+                    <img src="./imgs/jtshort.jpg" id="jtimg"  onmouseover="javascript:showGrapth('#jtgraph');" />
+                 
+                </span>
+
+                  <span  onmouseover="javascript:hideGraph();"  >
                     Joseph Tumushabe<BR/>
                     <strong>CEO</strong>
                   </span>
-</a>
+                  </a>
                 </div>
 
 
                 <div class="img-box">
-                   <a href="#" data-featherlight="#belindamessage" style="text-decoration: none;  color:#000;"> 
-                  <span><img src="./imgs/belindashort.jpg" /></span>
+                   <a href="#" data-featherlight="#belindamessage" style="text-decoration: none;  color:#000;">                      
                   <span>
+                     <img src="./imgs/maginfyingglass.png"  class="graph hide" id="belgraph"/> 
+                    <img src="./imgs/belindashort.jpg"  onmouseover="javascript:showGrapth('#belgraph');"  /></span>
+                  <span  onmouseover="javascript:hideGraph();">
                     Lydia Belinda Sandi <BR/>
                     <strong>Director</strong>
                   </span>
@@ -162,8 +211,10 @@
 
                  <div class="img-box">
                   <a href="#" data-featherlight="#caritasmessage" style="text-decoration: none;  color:#000;"> 
-                  <span><img src="./imgs/caritasshort.jpg" /></span>
                   <span>
+                      <img src="./imgs/maginfyingglass.png"  class="graph hide" id="carigraph"/> 
+                    <img src="./imgs/caritasshort.jpg"  onmouseover="javascript:showGrapth('#carigraph');"  /></span>
+                  <span onmouseover="javascript:hideGraph();">
                    Caritas Pesha  <BR/>
                     <strong>Team Leader </strong>
                   </span>
@@ -172,10 +223,12 @@
 
                  <div class="img-box">
                    <a href="#" data-featherlight="#glendasmessage" style="text-decoration: none;  color:#000;"> 
-                  <span><img src="./imgs/glendashort.jpg" /></span>
                   <span>
+                     <img src="./imgs/maginfyingglass.png"  class="graph hide" id="glengraph"/> 
+                    <img src="./imgs/glendashort.jpg" onmouseover="javascript:showGrapth('#glengraph');" /></span>
+                  <span onmouseover="javascript:hideGraph();">
                   Glenda T. Muzenda   <BR/>
-                    <strong>Social Justice Professional </strong>
+                    <strong>SA - Director </strong>
                   </span>
                 </a>
                 </div>
@@ -183,10 +236,13 @@
 
                  <div class="img-box">
                    <a href="#" data-featherlight="#juliasmessage" style="text-decoration: none;  color:#000;"> 
-                  <span><img src="./imgs/juliashort.jpg" /></span>
+                     
                   <span>
+                    <img src="./imgs/maginfyingglass.png"  class="graph hide" id="juligraph"/> 
+                    <img src="./imgs/juliashort.jpg" onmouseover="javascript:showGrapth('#juligraph');"  /></span>
+                  <span onmouseover="javascript:hideGraph();">
                   Julia T. Nzimande  <BR/>
-                    <strong>SA - Director </strong>
+                    <strong>SA - Country Representatitve </strong>
                   </span>
                 </a>
                 </div>
@@ -195,8 +251,11 @@
 
             <div class="img-box">
                <a href="#" data-featherlight="#jonamessage" style="text-decoration: none;  color:#000;"> 
-                  <span><img src="./imgs/jonashort.jpg" /></span>
+                  
                   <span>
+                    <img src="./imgs/maginfyingglass.png"  class="graph hide" id="jonagraph"/> 
+                    <img src="./imgs/jonashort.jpg"  onmouseover="javascript:showGrapth('#jonagraph');"   /></span>
+                  <span  onmouseover="javascript:hideGraph();">
                   Johannes G. Mulokozi  <BR/>
                     <strong>Monitoring and Evaluation  </strong>
                   </span>
@@ -208,8 +267,10 @@
 
               <div class="img-box">
                  <a href="#" data-featherlight="#juliethmessage" style="text-decoration: none;  color:#000;"> 
-                  <span><img src="./imgs/juliethshort.jpg" /></span>
                   <span>
+                    <img src="./imgs/maginfyingglass.png"  class="graph hide" id="juliegraph"/> 
+                    <img src="./imgs/juliethshort.jpg"  onmouseover="javascript:showGrapth('#juliegraph');"  /></span>
+                  <span  onmouseover="javascript:hideGraph();">
                   Julieth F. Mongi  <BR/>
                     <strong>Public Relations </strong>
                   </span>
@@ -219,8 +280,10 @@
 
                 <div class="img-box">
                    <a href="#" data-featherlight="#benardmessage" style="text-decoration: none;  color:#000;"> 
-                    <span><img src="./imgs/benardshort.jpg" />  </span>
-                  <span>
+                    <span>
+                      <img src="./imgs/maginfyingglass.png"  class="graph hide" id="benardgraph"/> 
+                      <img src="./imgs/benardshort.jpg" onmouseover="javascript:showGrapth('#benardgraph');" />  </span>
+                  <span  onmouseover="javascript:hideGraph();" >
                  Bernard Kakuhikire <BR/>
                     <strong> Coordinator Uganda </strong>
                   </span>
@@ -233,8 +296,10 @@
 
                 <div class="img-box">
                    <a href="#" data-featherlight="#stephenmessage" style="text-decoration: none;  color:#000;"> 
-                  <span><img src="./imgs/stephenshort.jpg" /></span>
                   <span>
+                    <img src="./imgs/maginfyingglass.png"  class="graph hide" id="stephengraph"/> 
+                    <img src="./imgs/stephenshort.jpg"  onmouseover="javascript:showGrapth('#stephengraph');" /></span>
+                  <span  onmouseover="javascript:hideGraph();" >
                 Stephen Mugarura <BR/>
                     <strong> Head Statistician  </strong>
                   </span>
@@ -265,7 +330,7 @@
 
             </div>
               <br/>
-              <div style="width: 65%; height: 160px; display: block;  margin:auto; text-align: center; overflow-x:auto;">
+              <div title="click for details" style="width: 65%; height: 160px; display: block;  margin:auto; text-align: center; overflow-x:auto;">
                 <div style="height: 150px; width: 160px;  float: left; margin: 5px;">
                   <img src="./imgs/undp.png" width="160px">
                 </div>
@@ -325,8 +390,8 @@
               <div class="col l3 s12">
                 <h5 class="white-text">Connect With Us</h5>
                 <i style="font-size: 20px;" class="fa fa-envelope"></i> info@ceredevafrica.org <br/>
-                <i style="font-size: 20px;" class="fa fa-phone"></i> Tanzania: +255 71 3063240 &nbsp; SouthAfrica: +2761 909 9692   <br/>
-                <i  style="font-size: 20px;" class="fa fa-home"></i> <quote> Kinondoni P.O. Box 110297 Dar es Salaam – Tanzania , Dar Es Salaam</quote> <br/>
+                <i style="font-size: 20px;" class="fa fa-phone"></i> Tanzania: +255 71 3063240/744 970145 &nbsp; SouthAfrica: +2761 909 9692   <br/>
+                <i  style="font-size: 20px;" class="fa fa-home"></i> <quote> Kinondoni P.O. Box 110297 Dar es Salaam – Tanzania , Dar es Salaam</quote> <br/>
                 
                 
               </div>
@@ -360,7 +425,7 @@
   <div class="lightbox" id="belindamessage">
       <h2>Lydia Belinda Sandi </h2>
       <p>
-          Lydia Belinda Sandi – Director, young, self-driven, ambitious, and hardworking entrepreneur, with a Degree in Marketing and a Professional Certificate in Marketing (CIM). Lydia Heads the CEREDEV Lake Zonal Centre and is Director CEREDEV Horizon Promary and Nursery School. 
+          Lydia Belinda Sandi – Director, young, self-driven, ambitious, and hardworking entrepreneur, with a Degree in Marketing and a Professional Certificate in Marketing (CIM). Lydia Heads the CEREDEV Lake Zonal Centre and is Director CEREDEV Horizon primary and Nursery School. 
 
           Lydia has eight-year experience in working with starter campaigns and nurturing them to enviable heights; marketing and network specialist. She won the Tony Elumelu Award 2018 for CEREDEV career development training wing.
 
@@ -392,7 +457,7 @@
     <div class="lightbox" id="juliasmessage">
       <h2>Julia Teboho Nzimande </h2>
       <p>
-        CEREDEV South Africa Director Capacity Building and Governance Coordinator is a Black Economic Empowerment Advisor; and a share-holder in Mobile Accommodations Solutions a company designing, manufacturing innovative modular buildings, i.e. classrooms, clinics and houses.She is Board Member and Director on the Association of B-BBEE Professionals (ABP) in SA since September 2016 and Technical committee member at South African Institute of Professional Accountants (SAIPA). Julia worked for almost a decade at the Department of Trade and Industry,
+        Julia Teboho Nzimande is a Black Economic Empowerment Advisor; and a share-holder in Mobile Accommodations Solutions a company designing, manufacturing innovative modular buildings, i.e. classrooms, clinics and houses.She is Board Member and Director on the Association of B-BBEE Professionals (ABP) in SA since September 2016 and Technical committee member at South African Institute of Professional Accountants (SAIPA). Julia worked for almost a decade at the Department of Trade and Industry,
         initially as Deputy Director at the Industrial Development Division, Creative Industries desk and later Deputy Director BEE Partnerships and Stakeholder Engagement at the B-BBEE Chief Directorate. Julia was part of the B-BBEE legislation, policies and strategies development team. Her passion is the develop-ment and implementation of policies and strategies for the transformation and growth of national economies; creating PPP synergies, supporting compliance; providing support to CSOs that target economic empowerment and skills building of marginalised groups towards economic and social participation.
 
        
@@ -472,17 +537,15 @@
 
 
 
-
-
-
-
-
       <script src="js/jquery-2.1.1.min.js"></script>
-
+  
       <script src="release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>    
 
       <script src="js/materialize.js"></script>
       <script src="js/init.js"></script>
+
+    
+
 
       </body>
     </html>
