@@ -21,7 +21,18 @@
              <ul class="left hide-on-med-and-down" style="margin-left: 100px; width:100%;">
               <li><a href="./"  >Home</a></li>
                <li><a href="./aboutus.html"  >About Us</a></li>
-               <li><a href="./ourwork.html" class="active">Our Work</a></li>
+               <li><a href="#" class="active dropdown-trigger" data-target='dropdown1'>Our Work</a>
+
+                <!--  <ul  id='dropdown1' class='dropdown-content mo' >
+              <li> <a href="./decade_working_with_young_people.html" > Decade working with young people: children, adolescents and youth</a></li>
+              <li> <a href="./hiv_and_aids.html"> A decade of HIV and AIDS project evaluations and designs</a> </li>
+              <li> <a href="./economic_empowernment.html"> Economic empowerment during the CEREDEV Decade</a> </li>
+              <li> <a href="./public_health.html"> Public health, social welfare systems, demography, census and MNCH projects</a> </li>
+              <li> <a href="./turning_around.html"> Turning round a challenging energy project</a> </li>
+              
+            </ul> -->
+
+               </li>
                
                  <li><a href="./partners.html"   >Our Partners</a></li>
                
@@ -72,7 +83,7 @@
    <div class="container" style="margin-top:0px; ">
           <div class="section">
             <ul class="mo">
-              <li> <a href="./decade_working_with_young_people.html" class="active"> Decade working with young people: children, adolescents and youth</a></li>
+              <li> <a href="./decade_working_with_young_people.html" > Decade working with young people: children, adolescents and youth</a></li>
               <li> <a href="./hiv_and_aids.html"> A decade of HIV and AIDS project evaluations and designs</a> </li>
               <li> <a href="./economic_empowernment.html"> Economic empowerment during the CEREDEV Decade</a> </li>
               <li> <a href="./public_health.html"> Public health, social welfare systems, demography, census and MNCH projects</a> </li>
@@ -134,6 +145,17 @@
       <!--  Scripts-->
       <script src="js/jquery-2.1.1.min.js"></script>
       <script src="js/materialize.js"></script>
+      <script type="text/javascript">
+         document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $('.dropdown-trigger').dropdown();
+
+      </script>
       <script src="js/init.js"></script>
 
       </body>

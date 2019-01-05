@@ -69,6 +69,10 @@ footer.page-footer {
 
 .mo{
   padding-left: 30px !important;  float: left;
+  min-width: 1000px !important; margin:auto !important;
+  left: 0px !important;
+    top: 55px !important;
+
 }
 
 
