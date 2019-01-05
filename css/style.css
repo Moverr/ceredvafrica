@@ -91,3 +91,7 @@ footer.page-footer {
   background: #f1f2f1 !important;
   padding: 5px;
 }
+
+b{
+  font-weight: bold;
+}
