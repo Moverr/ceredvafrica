@@ -1016,9 +1016,10 @@
 }
 
 .teal-text.text-lighten-2 {
-  color: #bbb !important;
+  color: #8f853a !important;
     font-weight: 700;
     text-shadow: -2px 1px     #fff;
+     
 }
 
 .teal.lighten-1 {
